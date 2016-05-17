@@ -1,23 +1,21 @@
-/// <reference path="../../typings/tsd.d.ts" />
-
 import * as React from 'react';
 
 interface ICounterProps {
-  index: number;
-  value: number;
-  onIncrement: () => void;
-  onDecrement: () => void;
+  index:number;
+  value:number;
+  onIncrement:() => void;
+  onDecrement:() => void;
 }
 
-const COLORS: string[] = ['blue', 'green', 'red'];
+const COLORS:string[] = ['blue', 'green', 'red'];
 
 export class Counter extends React.Component<ICounterProps, {}> {
-  public render(): React.ReactElement<{}> {
-    const style: {} = {
+  public render():React.ReactElement<{}> {
+    const style:{} = {
       color: COLORS[this.props.index % COLORS.length],
     };
 
-    const {index, value, onIncrement, onDecrement}: any = this.props;
+    const {index, value, onIncrement, onDecrement}:any = this.props;
 
     return (
       <div>

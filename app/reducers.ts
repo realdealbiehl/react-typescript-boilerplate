@@ -1,9 +1,7 @@
-/// <reference path="../typings/tsd.d.ts" />
-
 import { Reducer, combineReducers } from 'redux';
 import { ICounterAction, ACTION } from './actions';
 
-function counters(state: number[] = [0, 0, 0], action: ICounterAction): number[] {
+function counters(state:number[] = [0, 0, 0], action:ICounterAction):number[] {
   switch (action.type) {
     case ACTION.IncrementCounter:
       return [
@@ -27,4 +25,4 @@ function counters(state: number[] = [0, 0, 0], action: ICounterAction): number[]
   }
 }
 
-export const counterApp: Reducer = combineReducers({ counters });
+export const counterApp:Reducer = combineReducers({ counters });

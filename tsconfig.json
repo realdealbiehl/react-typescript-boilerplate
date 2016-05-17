@@ -4,5 +4,10 @@
     "jsx": "preserve",
     "experimentalDecorators": true
   },
-  "exclude": ["node_modules", "config", "dev_server.js"]
+  "exclude": ["node_modules", "config", "dev_server.js"],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": {
+    "rewriteTsconfig": false
+  }
 }

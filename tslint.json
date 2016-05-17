@@ -80,21 +80,28 @@
         "variable-declaration",
         "member-variable-declaration"
     ],
-    "typedef-whitespace": [true, {
-        "call-signature": "nospace",
-        "index-signature": "nospace",
-        "parameter": "nospace",
-        "property-declaration": "nospace",
-        "variable-declaration": "nospace"
-    }],
+    "typedef-whitespace": [
+        true, {
+            "call-signature": "nospace",
+            "index-signature": "nospace",
+            "parameter": "nospace",
+            "property-declaration": "nospace",
+            "variable-declaration": "nospace"
+        }, {
+            "call-signature": "nospace",
+            "index-signature": "nospace",
+            "parameter": "nospace",
+            "property-declaration": "nospace",
+            "variable-declaration": "nospace"
+        }
+    ],
     "use-strict": false,
     "variable-name": false,
     "whitespace": [true,
         "check-branch",
         "check-decl",
         "check-operator",
-        "check-separator",
-        "check-type"
+        "check-separator"
     ]
   }
 }
